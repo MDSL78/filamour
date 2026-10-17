@@ -1,0 +1,11 @@
+{
+  "name": "Filamour",
+  "short_name": "Filamour",
+  "description": "L'appli des couples",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F2F7",
+  "theme_color": "#D3264A",
+  "lang": "fr",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
