@@ -11,9 +11,7 @@ function frenchError(msg: string) {
   if (/email not confirmed/i.test(msg)) return "Confirme d'abord ton e-mail avec le lien reçu.";
   if (/password/i.test(msg)) return "Le mot de passe doit faire au moins 8 caractères.";
   if (/rate limit/i.test(msg)) return "Trop de tentatives. Réessaie dans quelques minutes.";
-  return "Une erreur est survenue. Réessaie.";
-}
-
+       return "Une erreur est survenue : " + msg;
 export default function Connexion() {
   const router = useRouter();
   const [mode, setMode] = useState<"login" | "signup">("signup");
